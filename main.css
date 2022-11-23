@@ -27,7 +27,7 @@ header.container-header figure {
     width: 200px;
 }
 
-header.container-header figure img {
+header.container-header figure a img {
     width: 100%;
 }
 
@@ -57,6 +57,13 @@ section.img-content figure img {
 }
 
 section.btn-bonus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.btn-bonus a {
     background-color: #13d140;
     width: 200px;
     text-align: center;
@@ -72,7 +79,7 @@ section.btn-bonus a {
     text-decoration: none;
 }
 
-section.btn-bonus:hover {
+section.btn-bonus a:hover {
     background-color: #029b26;
 }
 
@@ -121,4 +128,27 @@ article.container-context p span {
     position: relative;
     bottom: .1em;
     margin-right: .3em;
+}
+
+@media only screen and (max-width: 550px) {
+    article.container-context {
+        width: 95%;
+    }
+
+    article.container-context h3 {
+        font-size: 20px;
+    }
+
+    section.text-container div.text-content h3 {
+        font-size: 22px;
+    }
+    
+    section.text-container div.text-content h4 {
+        font-size: 17px;
+    }
+
+    section.container-img-bonus figure {
+        margin: 4em auto;
+        width: 95%;
+    }
 }
