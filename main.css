@@ -65,17 +65,18 @@ section.btn-bonus {
 
 section.btn-bonus a {
     background-color: #13d140;
-    width: 200px;
+    width: 250px;
     text-align: center;
-    padding: .5em 1.5em;
+    padding: 1em 1.5em;
     border-radius: 5px;
     margin: 0 auto;
     font-weight: bold;
     margin-top: 1em;
+    font-size: 20px;
 }
 
 section.btn-bonus a {
-    color: #000;
+    color: #494949;
     text-decoration: none;
 }
 
@@ -129,6 +130,40 @@ article.container-context p span {
     bottom: .1em;
     margin-right: .3em;
 }
+
+section.btn-bonus a  {
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+}
+
+
+
+@-webkit-keyframes glowing {
+    0% { background-color: #993399; -webkit-box-shadow: 0 0 3px #993399; }
+    50% { background-color: #13d140; -webkit-box-shadow: 0 0 3px #13d140; }
+    100% { background-color: #993399; -webkit-box-shadow: 0 0 3px #993399; }
+  }
+  
+  @-moz-keyframes glowing {
+    0% { background-color: #993399; -moz-box-shadow: 0 0 3px #993399; }
+    50% { background-color: #13d140; -moz-box-shadow: 0 0 3px #13d140; }
+    100% { background-color: #993399; -moz-box-shadow: 0 0 3px #993399; }
+  }
+  
+  @-o-keyframes glowing {
+    0% { background-color: #993399; box-shadow: 0 0 3px #993399; }
+    50% { background-color: #13d140; box-shadow: 0 0 3px #13d140; }
+    100% { background-color: #993399; box-shadow: 0 0 3px #993399; }
+  }
+  
+  @keyframes glowing {
+    0% { background-color: #993399; box-shadow: 0 0 3px #993399; }
+    50% { background-color: #13d140; box-shadow: 0 0 3px #13d140; }
+    100% { background-color: #993399; box-shadow: 0 0 3px #993399; }
+  }
+  
 
 @media only screen and (max-width: 550px) {
     article.container-context {
